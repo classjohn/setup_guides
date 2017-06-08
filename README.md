@@ -95,7 +95,7 @@ server {
         server_name my_domain.com;
         passenger_enabled on;
         rails_env    production;
-        root         /home/ubuntu/my_app_name/current/public;
+        root         /home/ubuntu/my_app_name/public;
 
         # redirect server error pages to the static page /50x.html
         error_page   500 502 503 504  /50x.html;
