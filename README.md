@@ -92,10 +92,10 @@ server {
         listen 80;
         listen [::]:80 ipv6only=on;
 
-        server_name 내_도메인.com; #자신의 domain을 넣으세요!
+        server_name my_domain.com;
         passenger_enabled on;
         rails_env    production;
-        root         /home/ubuntu/나의_app_이름/current/public; #자신의 app이름을 넣으세요 !
+        root         /home/ubuntu/my_app_name/current/public;
 
         # redirect server error pages to the static page /50x.html
         error_page   500 502 503 504  /50x.html;
