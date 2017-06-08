@@ -70,13 +70,13 @@ sudo vi /etc/nginx/nginx.conf
 
 include /etc/nginx/passenger.conf;
 ```
-Passenger 설정
+Passenger 설정(아래쪽 코드 붙여넣기)
 ```
 sudo vi /etc/nginx/passenger.conf
 ```
 
 ```
-passenger_ruby /home/deploy/.rbenv/shims/ruby; # If you use rbenv
+passenger_ruby /home/ubuntu/.rbenv/shims/ruby; # If you use rbenv
 ```
 다시 서버 켜기
 ```
