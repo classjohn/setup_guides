@@ -106,3 +106,22 @@ server {
 ```
 Passenger로 Rails 실행하기
 본인의 ip로 접속해서 확인하기
+---
+Database setup
+```
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+```
+`Gemfile`에 mysql2 추가
+```
+gem 'mysql2', group: :production
+```
+`config/database.yml` 내용 추가
+```
+production:
+    adapter: mysql2
+    encoding: utf8
+    database: app_name_production
+    pool: 5
+    username: <%=ENV['DATABASE_USER']%>
+    password: <%=ENV['DATABASE_PASSWORD']%>
+```
