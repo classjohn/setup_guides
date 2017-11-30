@@ -105,3 +105,4 @@ server {
 }
 ```
 Passenger로 Rails 실행하기
+본인의 ip로 접속해서 확인하기
