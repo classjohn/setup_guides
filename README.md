@@ -16,7 +16,7 @@ Ruby on Rails에 필요한 여러 프로그램 설치
 ```
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs
 ```
-rbenv를 활용한 ruby -v 2.3.0 설치
+rbenv를 활용한 ruby -v 2.3.5 설치
 ```
 cd
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -28,8 +28,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 exec $SHELL
 
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.3.5
+rbenv global 2.3.5
 ruby -v
 ```
 bundler 설치
